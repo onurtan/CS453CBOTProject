@@ -1,0 +1,9 @@
+{
+  "linters": {
+    "PHP Codesniffer": {
+      "type": "phpcs",
+      "flags": ["--standard=PSR2"],
+      "include": "(\\.php$)"
+    }
+  }
+}
