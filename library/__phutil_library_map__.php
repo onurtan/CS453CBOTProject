@@ -10,6 +10,7 @@ phutil_register_library_map(array(
   'class' =>
   array(
     'CBOTTestEngine' => 'src/CBOTTestEngine.php',
+    'CBOTUnitTest1' => '__tests__/test.php'
   ),
   'function' =>
   array(
@@ -17,5 +18,6 @@ phutil_register_library_map(array(
   'xmap' =>
   array(
     'CBOTTestEngine' => 'ArcanistUnitTestEngine',
+    'CBOTUnitTest1' => '__tests__/test.php'
   ),
 ));
