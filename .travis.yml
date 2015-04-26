@@ -7,6 +7,7 @@ php:
 after_success:
   - openssl aes-256-cbc -k "$super_secret_password" -in .travis/ssh.key.enc -out .travis/ssh.key -d
   - chmod 600 .travis/ssh.key
+  - eval `ssh-agent -s`
   - ssh-add .travis/ssh.key
   - echo -e "Host 37.187.47.82\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh cihad@37.187.47.82 "cd ~/cbotbeta/; git pull;"
