@@ -1,8 +1,6 @@
 {
 	"project_id" : "CBOT",
 	"conduit_uri" : "https://bilkentcbot.phacility.com/",
-	"unit.engine" : "CBOTTestEngine",
-	"load" : [
-		"library/"
-	]
+	"unit.engine": "PhpunitTestEngine",
+	"phpnuit_config": "phpunit.xml"
 }
