@@ -4,7 +4,7 @@ php:
   - 5.5
   - 5.6
   - hhvm
-before_deploy:
+after_success:
   - openssl aes-256-cbc -k "$super_secret_password" -in .travis/ssh.key.enc -out .travis/ssh.key -d
   - chmod 600 .travis/ssh.key
   - ssh-add .travis/ssh.key
