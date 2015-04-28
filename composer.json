@@ -1,0 +1,9 @@
+{
+	"name": "cbot/demo-project",
+	"require": {
+		"misd/highcharts": "dev-master",
+		"laravel/laravel": "dev-master",
+		"simplon/mysql": "dev-master"
+	}
+}
+

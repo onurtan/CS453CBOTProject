@@ -13,7 +13,7 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
 
     public function testWhat()
     {
-        $this->assertEquals(4, 2*2);
+        $this->assertEquals(4, 2*3);
     }
 }
 
