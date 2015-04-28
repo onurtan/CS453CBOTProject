@@ -11,3 +11,4 @@ after_success:
   - ssh-add .travis/ssh.key
   - echo -e "Host 37.187.47.82\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - ssh cihad@37.187.47.82 "cd ~/cbotbeta/; git pull;"
+  - ./integration_test.sh
